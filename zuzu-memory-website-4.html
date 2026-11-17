@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff4f4">
+<title>A Little World for Zuzu ♡</title>
+<style>
+:root{--ink:#573d49;--muted:#927b84;--pink:#f4cbd4;--rose:#d987a0;--cream:#fff9f5;--line:#f0dfe2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+nav{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:14px;background:#fff9f5eF;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);font:12px Arial,sans-serif;letter-spacing:.08em}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--rose)}
+.hero{min-height:88vh;display:grid;place-items:center;text-align:center;padding:70px 22px;background:radial-gradient(ellipse at 20% 15%,#fce4e8 0,transparent 40%),radial-gradient(ellipse at 85% 80%,#f8e9df 0,transparent 42%),var(--cream)}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(48px,10vw,92px);font-weight:normal;line-height:.98;margin:22px 0;color:#754d5c}
+.hero p{max-width:520px;margin:0 auto 28px;color:var(--muted);font-size:18px;line-height:1.7}
+.btn{display:inline-block;border:0;border-radius:99px;padding:14px 24px;background:#d987a0;color:white;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:.1em;cursor:pointer;box-shadow:0 8px 24px #d987a033}
+.btn.secondary{background:#fff;border:1px solid var(--line);color:#875d6d;box-shadow:none}
+section{max-width:960px;margin:auto;padding:78px 22px}
+.section-head{text-align:center;margin-bottom:34px}.section-head h2{font-weight:normal;font-size:clamp(32px,6vw,48px);margin:10px 0}.section-head p{color:var(--muted);line-height:1.6}
+.paper{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(24px,5vw,48px);box-shadow:0 14px 40px #8f5d6b0c}
+.story{text-align:center;font-size:19px;line-height:1.9;color:#765d67;max-width:700px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.photo{background:white;border:1px solid var(--line);padding:10px 10px 16px;box-shadow:0 8px 24px #8f5d6b12;transform:rotate(var(--tilt));}
+.photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#f8e9ed}
+.photo figcaption{text-align:center;padding:12px 4px 0;font-size:15px;color:#896977}
+.note{max-width:680px;margin:auto;background:#fff;border:1px solid var(--line);padding:30px;border-radius:4px 22px 22px 22px;font-size:18px;line-height:1.9;color:#765d67;white-space:pre-line}
+.surprises{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.secret{min-height:130px;border:1px solid var(--line);background:#fff;border-radius:18px;padding:22px;text-align:center;color:#8b6876;cursor:pointer;font:15px Georgia,serif}
+.secret span{display:block;font-size:28px;margin-bottom:10px}.secret small{display:block;margin-top:12px;color:var(--muted);line-height:1.5}
+.searchbox{display:flex;gap:8px;max-width:560px;margin:20px auto 0}.searchbox input{min-width:0;flex:1;border:1px solid var(--line);border-radius:99px;padding:14px 18px;font-size:15px;background:white;color:var(--ink)}
+footer{text-align:center;padding:42px 20px 60px;color:var(--muted);font-size:14px}
+.heart{color:var(--rose)}.tiny{font:11px Arial,sans-serif;letter-spacing:.12em;color:#b18e99}
+@media(max-width:650px){.grid{grid-template-columns:1fr 1fr}.surprises{grid-template-columns:1fr}.photo:last-child{display:none}nav{gap:13px}.hero{min-height:80vh}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#story">OUR STORY</a><a href="#gallery">MEMORIES</a><a href="#letter">A LETTER</a><a href="#surprises">SURPRISES</a>
+</nav>
+<header class="hero">
+  <div>
+    <div class="eyebrow">a little something made for you</div>
+    <h1>A Little World<br>for Zuzu <span class="heart">♡</span></h1>
+    <p>Because some people deserve more than a birthday wish. They deserve a whole little world made with care.</p>
+    <a class="btn" href="#story">OPEN YOUR LITTLE WORLD</a>
+    <p class="tiny" style="margin-top:24px">MADE WITH LOVE · JUST FOR ZUZU</p>
+  </div>
+</header>
+<section id="story">
+  <div class="section-head"><div class="eyebrow">chapter one</div><h2>Our little story</h2><p>A few words about the moments that matter.</p></div>
+  <div class="paper story">
+    This is where our story lives — in the little conversations, the unexpected laughs, and the moments I wish I could pause for a little longer.<br><br>
+    Replace this paragraph with your own story. Add the day you first met, your favourite memory, or a tiny detail that only the two of you understand.
+  </div>
+</section>
+<section id="gallery">
+  <div class="section-head"><div class="eyebrow">chapter two</div><h2>Little moments, forever</h2><p>Three spaces for some of your favourite photographs.</p></div>
+  <div class="grid">
+    <figure class="photo" style="--tilt:-2deg"><img src="YOUR_PHOTO_1.jpg" alt="Add your first favourite photo"><figcaption>One of my favourite moments</figcaption></figure>
+    <figure class="photo" style="--tilt:1.5deg"><img src="YOUR_PHOTO_2.jpg" alt="Add your second favourite photo"><figcaption>A memory I keep close</figcaption></figure>
+    <figure class="photo" style="--tilt:-1deg"><img src="YOUR_PHOTO_3.jpg" alt="Add your third favourite photo"><figcaption>And many more to come</figcaption></figure>
+  </div>
+  <p class="tiny" style="text-align:center;margin-top:22px">TIP: ADD YOUR PHOTOS IN THE SAME FOLDER AS THIS HTML FILE.</p>
+</section>
+<section id="letter">
+  <div class="section-head"><div class="eyebrow">chapter three</div><h2>Things I want you to know</h2></div>
+  <div class="note">Dear Zuzu,
+
+I hope this little page reminds you how special you are. Thank you for the laughter, the memories, and all the small moments that became important to me.
+
+I may not always find the perfect words, but I hope you always feel appreciated. You deserve kindness, joy, and beautiful surprises — today and every day.
+
+Happy Birthday. Keep being wonderfully you.
+
+With love,
+[Your name]</div>
+</section>
+<section id="surprises">
+  <div class="section-head"><div class="eyebrow">chapter four</div><h2>Little hidden surprises</h2><p>Tap each envelope to open a small message.</p></div>
+  <div class="surprises">
+    <button class="secret" onclick="reveal(this,'You make ordinary moments feel a little more special. ♡')"><span>✉</span>Open when you need a smile<small>tap to reveal</small></button>
+    <button class="secret" onclick="reveal(this,'Your laugh is one of my favourite sounds. Never stop laughing. ♡')"><span>✉</span>Open for a happy thought<small>tap to reveal</small></button>
+    <button class="secret" onclick="reveal(this,'This is just one page. There are still so many memories waiting to be made. ♡')"><span>✉</span>Open for the future<small>tap to reveal</small></button>
+  </div>
+</section>
+<section>
+  <div class="section-head"><div class="eyebrow">one last little thing</div><h2>Make a wish, Zuzu <span class="heart">♡</span></h2><p>And whenever you want, come back to this little world.</p></div>
+  <div style="text-align:center"><button class="btn" onclick="document.getElementById('final').hidden=false">A FINAL BIRTHDAY WISH</button><p id="final" hidden style="font-size:22px;line-height:1.6;color:#875d6d;margin-top:24px">May this year bring you unexpected happiness, gentle days, and countless reasons to smile. Happy Birthday, Zuzu! ♡</p></div>
+</section>
+<section style="padding-top:0">
+  <div class="section-head"><div class="eyebrow">just for fun</div><h2>Search the little universe</h2><p>Type anything and open it directly in Google.</p></div>
+  <form class="searchbox" onsubmit="event.preventDefault();googleSearch()"><input id="q" type="search" placeholder="Search for anything..." aria-label="Google search"><button class="btn" type="submit">SEARCH</button></form>
+</section>
+<footer>Made with <span class="heart">♥</span> for Zuzu · A little world she can visit anytime</footer>
+<script>
+function reveal(button,message){button.innerHTML='<span>♡</span>'+message;button.disabled=true;button.style.cursor='default'}
+function googleSearch(){const q=document.getElementById('q').value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(q),'_blank','noopener')}
+</script>
+</body>
+</html>
